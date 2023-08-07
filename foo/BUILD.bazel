@@ -1,0 +1,13 @@
+load("@aspect_rules_ts//ts:defs.bzl", "ts_project")
+package(default_visibility = ["//visibility:public"])
+
+ts_project(
+  name = package_name(),
+  srcs = glob(["*.ts"]),
+  tsconfig = "//:tsconfig",
+  deps = [
+    "//:node_modules/@types/node",
+    "//:node_modules/typescript",
+  ],
+  declaration = True,
+)

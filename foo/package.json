@@ -1,0 +1,8 @@
+{
+  "name": "foo",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "18.11.0",
+    "typescript": "5.1.6"
+  }
+}
